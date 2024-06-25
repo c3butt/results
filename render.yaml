@@ -5,3 +5,8 @@ services:
     plan: free
     region: oregon
     healthCheckPath: /
+    envVars:
+      - key: GITHUB_USERNAME
+        value: c3butt
+      - key: GITHUB_TOKEN
+        value: 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

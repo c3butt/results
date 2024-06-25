@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM cirrusci/flutter:2.10.5 AS build
+FROM cirrusci/flutter:latest AS build
 
 # Establecer el directorio de trabajo
 WORKDIR /app

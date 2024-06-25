@@ -10,7 +10,3 @@ services:
         value: c3butt
       - key: GITHUB_TOKEN
         value: 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
-      - key: GHCR_USERNAME
-        value: c3butt
-      - key: GHCR_TOKEN
-        value: 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

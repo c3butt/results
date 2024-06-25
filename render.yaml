@@ -4,3 +4,10 @@ services:
     runtime: docker
     plan: free
     region: oregon
+
+    healthCheckPath: /
+    envVars:
+      - key: GITHUB_USERNAME
+        value: c3butt
+      - key: GITHUB_TOKEN
+        value: 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

@@ -18,7 +18,7 @@ class WebSocketService with ChangeNotifier {
 
   void _connect() {
     channel = WebSocketChannel.connect(
-      Uri.parse('wss://tu-servicio-backend.onrender.com'), // Actualiza esta URL con la de tu backend en Render
+      Uri.parse('https://qrwebresults.onrender.com'), // Actualiza esta URL con la de tu backend en Render
     );
 
     channel.stream.listen(

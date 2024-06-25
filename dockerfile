@@ -1,5 +1,5 @@
-# Usar una imagen de Docker oficial de Flutter
-FROM cirrusci/flutter:stable AS build
+# Etapa de construcción
+FROM cirrusci/flutter:2.10.5 AS build
 
 # Establecer el directorio de trabajo
 WORKDIR /app
@@ -14,6 +14,14 @@ COPY . .
 # Construir la aplicación Flutter Web
 RUN flutter build web
 
-# Usar Nginx para servir la aplicación
+# Etapa de producción
 FROM nginx:alpine
+
+# Copiar archivos generados al servidor nginx
 COPY --from=build /app/build/web /usr/share/nginx/html
+
+# Exponer el puerto
+EXPOSE 80
+
+# Comando por defecto para ejecutar nginx
+CMD ["nginx", "-g", "daemon off;"]

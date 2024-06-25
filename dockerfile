@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM cirrusci/flutter:3.10 AS build
+FROM ghcr.io/cirruslabs/flutter/flutter:stable AS build
 
 # Establecer el directorio de trabajo
 WORKDIR /app

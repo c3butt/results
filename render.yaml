@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: qrwebresults
+    name: results
     runtime: docker
     plan: free
     region: oregon

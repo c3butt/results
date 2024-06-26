@@ -1,5 +1,5 @@
-# Etapa de construcción
-FROM ghcr.io/cirruslabs/flutter:3.22.0 AS build
+# Usa la imagen que subiste a Docker Hub
+FROM prosperi07/results:latest AS build
 
 # Establecer el directorio de trabajo
 WORKDIR /app

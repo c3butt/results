@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: results
+    name: qrwebresults
     runtime: docker
     plan: free
     region: oregon
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /
     envVars:
       - key: GITHUB_USERNAME

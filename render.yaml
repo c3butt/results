@@ -9,4 +9,4 @@ services:
       - key: GITHUB_USERNAME
         value: c3butt
       - key: GITHUB_TOKEN
-        value: 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
+        value: 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
